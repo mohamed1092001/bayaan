@@ -4,7 +4,7 @@ nav {
   width: 100%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 nav .search-box .drop-search a:hover,
@@ -72,14 +72,14 @@ nav .search-box button {
   height: 35px;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 40px;
   border-radius: 3px;
   background-color: #dc3545;
   color: #b6c3d2;
 }
 .flex,
 footer .main-footer .footer-services .footer-services-container {
-  display: flex ;
+  display: flex;
   flex-wrap: wrap;
 }
 .flex-center {
@@ -194,7 +194,13 @@ footer {
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  
 }
+
+.lower-nav .taps .main-tap .active{
+  border-bottom:solid 4px #6687c5 !important ;
+}
+
 .alternative-nav .taps,
 .lower-nav .drop-container .drop-list {
   position: absolute;
@@ -306,12 +312,15 @@ footer .main-footer .footer-services .title {
 }
 footer .main-footer .footer-services .footer-services-container .service {
   display: block;
-  width: calc(100% / 3);
+  width: calc((100% - 20px) / 3);
   color: #b6c3d2;
   text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
 }
 footer .main-footer .footer-services .footer-services-container .service:hover {
   color: #02d4d4;
+  overflow: visible;
 }
 footer iframe {
   width: 100%;
@@ -339,7 +348,7 @@ footer .main-footer .footer-services .add-email span {
 }
 footer .main-footer .footer-services .add-email form {
   width: 100%;
-  height: 50px;
+  height: 38px;
   position: relative;
   flex-wrap: nowrap;
 }
@@ -351,7 +360,7 @@ footer .main-footer .footer-services .add-email form button {
   width: fit-content;
   height: 100%;
   color: #fff;
-  background-color: #0070fd;
+  background-color: #6687c5;
   padding: 0 20px;
 }
 .powered {
@@ -373,7 +382,7 @@ footer .main-footer .footer-services .add-email form button {
   }
   nav .search-box {
     position: fixed;
-    top: 160px;
+    top: 190px;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
@@ -471,8 +480,17 @@ footer .main-footer .footer-services .add-email form button {
   .contact-section form {
     width: 100% !important;
   }
+
+  .contact-section > img {
+    display: none;
+  }
+
   main .slider .slide {
     height: auto;
     padding: 40px 0px;
   }
+}
+
+footer .main-footer .footer-services .footer-services-container{
+  gap: 10px;
 }

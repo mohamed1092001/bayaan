@@ -23,7 +23,6 @@
             </div>
             <div class="small circle">
             </div>
-            <img src="img/logo.svg" alt="">
         </div>
         <!-- start header "contain upper and lower nav" -->
         <header>
@@ -37,13 +36,7 @@
                 <!-- search-box -->
                 <form class="search-box">
                     <input type="text" class="search-field" placeholder="اابحث فى المدونة . . .">
-                    <div class="drop-search">
-                        <a href="application.html">حط اقتراحاتك هنا </a>
-                        <a href="application.html">حط اقتراحاتك هنا </a>
-                        <a href="application.html">حط اقتراحاتك هنا </a>
-                        <a href="application.html">حط اقتراحاتك هنا </a>
-                        <a href="application.html">حط اقتراحاتك هنا </a>
-                    </div>
+
                     <button type="submit">
                         <i class="fas fa-search" style="padding: 0px"></i>
                     </button>
@@ -65,11 +58,12 @@
             <div class="lower-nav fixed-padding">
                 <!-- navigation main taps -->
                 <ul class="taps">
-                    <li class="main-tap">
-                        <a href="index.html">
+                    <li class="main-tap ">
+                        <a href="index.html" class="active">
                             الرئيسية
                         </a>
                     </li>
+
 
                     <li class="drop-container main-tap">
                         <a href="about.html">
@@ -87,8 +81,8 @@
                                 سياسة الخصوصية
                             </a>
 
-                            <a href="#contact" class="list-item">
-                                انضم للعمل معنا
+                            <a href="questions.html" class="list-item">
+                                الأسئلة الشائعة
                             </a>
                         </div>
                     </li>
@@ -162,9 +156,7 @@
                     <li class="main-tap">
                         <a href="blog.html">المدونة</a>
                     </li>
-                    <li class="main-tap">
-                        <a href="questions.html">الأسئلة الشائعة</a>
-                    </li>
+
                     <li class="main-tap">
                         <a href="infographic.html">انفوجرافيك علمي</a>
                     </li>
@@ -222,6 +214,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="questions.html" class="list-item">
+                                الأسئلة الشائعة
+                            </a>
+                        </li>
+                        <li>
 
                         </li>
                         <li class="main-tap drop-container">
@@ -232,9 +229,7 @@
                         <li class="main-tap">
                             <a href="blog.html">المدونة</a>
                         </li>
-                        <li class="main-tap">
-                            <a href="questions.html">الأسئلة الشائعة</a>
-                        </li>
+
                         <li class="main-tap">
                             <a href="infographic.html">انفوجرافيك علمي</a>
                         </li>
@@ -271,7 +266,7 @@
 
         <!-- about section -->
 
-        <section class="about flex fixed-padding">
+        <section class="about flex fixed-padding" style="flex-direction: row-reverse;">
             <div class="about-desciption-box">
                 <h2 class="title">
                     مؤسسة البيان للخدمات الأكاديمية
@@ -299,136 +294,19 @@
             </div>
             <div class="about-details-box flex">
 
-                <div class="detail flex flex-center ">
-                    <img src="img/icon3.png" alt="">
-                    <p>
-                        سرعة الأداء
-                    </p>
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </div>
-                <div class="detail flex flex-center ">
-                    <img src="img/icon.png" alt="">
-                    <p>
-                        فريق من الخبراء
-                    </p>
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </div>
-                <div class="detail flex flex-center ">
-                    <img src="img/icon2.png" alt="">
-                    <p>
-                        تواصل عن قرب
-                    </p>
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </div>
-                <div class="detail flex flex-center ">
-                    <img src="img/icon4.png" alt="">
-                    <p>
-                        سهولة التعامل
-                    </p>
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </div>
-
+                <img src="img/logo.svg" style="width: 100%;transform: scale(.65);">
             </div>
         </section>
-        <!-- mission -->
-        <div class="mission fixed-padding">
-            <div class="definition">
-                <p class="title">اطلع على</p>
-                <p class="description">
-                    رسالتنا و رؤيتنا
-                </p>
-            </div>
-            <div class="container flex ">
-                <div class="massege ">
-                    <p class="name">رسالتـــنا</p>
-                    <p class="description">
-                        تقديم خدمات توعية فى مجال الاستشارات التعليمية وفقا للمعايير العلميه المتعارف عليها
-                    </p>
-                </div>
-                <div class="massege">
-                    <p class="name">رؤيتـــنا</p>
-                    <p class="description">
-                        أن تكون الشركة الخيار الأول لتقديم الاستشارات و الخدمات التعليمية بالشرق الأوسط
-                    </p>
-                </div>
-            </div>
-        </div>
 
-        <!-- information section -->
 
-        <section class="info flex  fixed-padding">
-            <img src="img/logo.svg" alt="">
-            <div class="container">
-                <div class="taps flex">
-                    <button class="active" target-btn="honesty">الأمانةالعلمية</button>
-                    <button target-btn="security">حماية الخصوصية</button>
-                    <button target-btn="team">فريق العمل</button>
-                </div>
-                <div class="display honesty flex">
-                    <div class="img-con flex">
-                        <img src="img/honesty.jpg" alt="honesty">
-                    </div>
-                    <div class="description">
-                        <div class="title">الأمانة العلمية</div>
-                        <div class="subject">
-                            تنجر المنارة أكثر من ألف مشروع سنوياً، وتكون ضمن تخصصات عديدة منها العلوم الطبية والتربية
-                            وعلم
-                            النفس واللغه العربيه والعلوم الإسلامية والعلوم المالية والإدارية وتكنولوجيا المعلومات. لذلك
-                            في
-                            حال ورود أي طلب خارج عن
-                            مجال عملنا فستقوم بالإعتذار عنه توفيراً لوقتكم.
-                        </div>
-                        <a href="application.html" class="btn">اطلع على خدماتنا</a>
-                    </div>
-                </div>
-                <div class="display security flex">
-                    <div class="img-con flex">
-                        <img src="img/security.jpg" alt="honesty">
-                    </div>
-                    <div class="description">
-                        <div class="title">حماية الخصوصية</div>
-                        <div class="subject">
-                            تنجر المنارة أكثر من ألف مشروع سنوياً، وتكون ضمن تخصصات عديدة منها العلوم الطبية والتربية
-                            وعلم
-                            النفس واللغه العربيه والعلوم الإسلامية والعلوم المالية والإدارية وتكنولوجيا المعلومات. لذلك
-                            في
-                            حال ورود أي طلب خارج عن
-                            مجال عملنا فستقوم بالإعتذار عنه توفيراً لوقتكم.
-                        </div>
-                        <a href="application.html" class="btn">اطلع على خدماتنا</a>
-                    </div>
-                </div>
-                <div class="display team flex">
-                    <div class="img-con flex">
-                        <img src="img/team.jpg" alt="honesty">
-                    </div>
-                    <div class="description">
-                        <div class="title">فريق العمل</div>
-                        <div class="subject">
-                            تنجر المنارة أكثر من ألف مشروع سنوياً، وتكون ضمن تخصصات عديدة منها العلوم الطبية والتربية
-                            وعلم
-                            النفس واللغه العربيه والعلوم الإسلامية والعلوم المالية والإدارية وتكنولوجيا المعلومات. لذلك
-                            في
-                            حال ورود أي طلب خارج عن
-                            مجال عملنا فستقوم بالإعتذار عنه توفيراً لوقتكم.
-                        </div>
-                        <a href="application.html" class="btn">اطلع على خدماتنا</a>
-                    </div>
-                </div>
-            </div>
 
-        </section>
 
         <!-- experience -->
         <section class="experience fixed-padding flex flex-center">
             <div class="definition">
                 <p class="title">سابقة أعمالنا</p>
                 <p class="description">
-                    خبرة أكثر من 12 عاما
+                    خبرة أكثر من 6 عاما
                 </p>
             </div>
             <div class="statistics-container flex">
@@ -440,7 +318,7 @@
                         +1
                     </p>
                     <div class="title">
-                        الأولى فى مصر
+                        مراجعة الهوية
                     </div>
                 </div>
                 <div class="statistic flex flex-center">
@@ -450,7 +328,7 @@
                         +0
                     </p>
                     <div class="title">
-                        بحث و رسالة
+                        الاستشارات الأكاديمية
                     </div>
                 </div>
                 <div class="statistic flex flex-center">
@@ -460,7 +338,7 @@
                         +0
                     </p>
                     <div class="title">
-                        مراجعة لغوية
+                        عملائنا
                     </div>
                 </div>
                 <div class="statistic flex flex-center">
@@ -470,13 +348,14 @@
                         +0
                     </p>
                     <div class="title">
-                        عميل لدينا
+                        مشاريعنـا
                     </div>
 
 
                 </div>
             </div>
         </section>
+
         <!-- Majors -->
         <section class="majors fixed-padding">
             <div class="small-title flex flex-center">
@@ -537,6 +416,27 @@
                         </p>
                     </div>
                 </div>
+                
+                <div class="major-card">
+                    <div class="strech flex flex-center">
+                        <div class="img">
+                            <img src="img/cellular-network.svg" alt="">
+                        </div>
+                        <p class="major-name">
+                            تقنية المعلومات
+                        </p>
+                    </div>
+                </div>
+                <div class="major-card">
+                    <div class="strech flex flex-center">
+                        <div class="img">
+                            <img src="img/cellular-network.svg" alt="">
+                        </div>
+                        <p class="major-name">
+                            تقنية المعلومات
+                        </p>
+                    </div>
+                </div>
                 <div class="major-card">
                     <div class="strech flex flex-center">
                         <div class="img">
@@ -569,6 +469,24 @@
                 </div>
             </div>
         </section>
+        <!-- mission -->
+        <div class="mission fixed-padding">
+
+            <div class="container flex ">
+                <div class="massege ">
+                    <p class="name">رسالتـــنا</p>
+                    <p class="description">
+                        تقديم خدمات توعية فى مجال الاستشارات التعليمية وفقا للمعايير العلميه المتعارف عليها
+                    </p>
+                </div>
+                <div class="massege">
+                    <p class="name">رؤيتـــنا</p>
+                    <p class="description">
+                        أن تكون الشركة الخيار الأول لتقديم الاستشارات و الخدمات التعليمية بالشرق الأوسط
+                    </p>
+                </div>
+            </div>
+        </div>
         <!-- customers rate -->
         <section class="customers-rate fixed-padding">
             <div class="small-title flex flex-center">
@@ -699,62 +617,81 @@
                     </p>
                     <div class="footer-services-container">
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             الترجمة الأكاديمية
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             تعديل الرسائل العلمية
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             إعداد وتقديم الشروحات
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             تنسيق أبحاث النشر
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             مناقشة وتفسير النتائج
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             اقتراح العناوين
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             كتابة خطة البحث
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             تفريغ المحتوى الكتابي
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             تنسيق الرسائل العلمية
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             توفير المراجع
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             أبحاث النشر والترقية
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             نقد الرسائل العلمية
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             توثيق المراجع
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             إعداد الإطار النظري
                         </a>
 
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             تصميم أدوات الدراسة
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             التدقيق اللغوي
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             إعداد ملخص الدراسة
                         </a>
 
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             كتابة خاتمة البحث
                         </a>
                         <a href="application.html" class="service">
+                            <i class="fa-solid fa-check"></i>
                             إعداد العروض التقديمية
                         </a>
                     </div>
@@ -772,7 +709,7 @@
                 </div>
             </section>
             <section class="powered">
-                <span>كل الحقوق محوفظه &#169;</span>
+                <span>كل الحقوق محفوظة &#169;</span>
                 طور بواسطة مؤسسة البيان
             </section>
         </footer>
@@ -782,9 +719,7 @@
         <!-- modals required in all pages -->
         <div class="shadow fixed-padding">
             <button class="close">
-                <span class="material-symbols-outlined">
-                    close
-                </span>
+                <i class="fas fa-window-close"></i>
             </button>
         </div>
 

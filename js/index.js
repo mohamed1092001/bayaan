@@ -99,7 +99,7 @@ $(document).ready(function () {
         (major_width = $(".majors .majors-slider .major-card").css("width")),
         $(".majors .majors-slider .major-card").css({ height: major_width });
     });
-  let major_card_width = parseFloat($(" .major-card").css("width"));
+  let major_card_width = parseFloat($(".major-card").css("width"));
   $(window).resize(function () {
     return (major_card_width = parseFloat($(" .major-card").css("width")));
   });
@@ -243,4 +243,30 @@ $(document).ready(function () {
         });
     }
   });
+
+  let majors = document.querySelectorAll(".major-card");
+  let major_card_wid = parseFloat($(".major-card").css("width"));
+  allowed_majors_transform =
+    (document.querySelectorAll(".major-card").length -
+      Math.floor(
+        parseFloat($(".majors .majors-slider").css("width")) / major_card_width
+      )) *
+    major_card_width;
+  console.log(allowed_majors_transform);
+  let major_setin = setInterval(function () {
+    // if (majors.length == 9) {
+      let major_translate = Math.abs(
+        $(".major-card").css("transform").split(",")[4]
+      );
+      let new_tran = major_translate + major_card_wid;
+
+      if (new_tran <= allowed_majors_transform) {
+        $(".major-card").css("transform", "translateX(-" + new_tran + "px)");
+      } else {
+        $(".major-card").css("transform", "translateX(0px)");
+      }
+    // } else {
+    //   clearInterval(major_setin);
+    // }
+  }, 3000);
 });
